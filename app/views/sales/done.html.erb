@@ -1,0 +1,13 @@
+<h1>El registro fue almacenado con éxito!</h1>
+
+<% @sales.each do |s| %>
+  <p>Cod: <%= s.cod %></p>
+  <p>Detail: <%= s.detail %></p>
+  <p>Category: <%= s.category %></p>
+  <p> Value: <%= s.value %></p>
+  <p>Discount: <%= s.discount %></p>
+  <p>Tax: <%= s.tax %></p>
+  <p>Total: <%= s.total %></p>
+<% end %>
+
+</div><%= link_to 'Volver', sales_new_path, class:'btn btn-warning'%>
